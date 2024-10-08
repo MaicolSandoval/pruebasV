@@ -1,11 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <!-- tenemos la informacion de la pagina -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Viajando por Colombia</title>
+
 </head>
+
 <body>
-    <h1>Hola mundo</h1>
+    <!-- Esta es la pagina principal desde aqui se llaman todas la opciones -->
+    <!-- se importa la hoja de estilos a utilizar -->
+    <link href="./../Styles/styles.css" rel="stylesheet" />
+    <div class="ContenedorPrincipal">
+        <!-- encabezado de la pagina -->
+        <header>
+            <div class="titulo">
+                <h2>Viajando por colombia</h2>
+                <h4>Vivelo para contarlo</h4>
+            </div>
+            <div class="sesion">
+                <div class="botonesSesion">
+                    <div class="botonRegistro">
+                        <button class="btnRegistro">Registrarse</button>
+                    </div>
+                    <div class="botonInicio">
+                        <div>
+                            <img class="user" src="./../Imagenes/user.png" height="50" width="50" />
+                            <button class="btnInicio">Ingresar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- se utiliza la etiqueta section para separar header del body de la pagina esta parte contiene el menu superior-->
+        <section>
+            <nav>
+                <ul class="main-menu">
+                    <li><a href="#" id="btnInicio">Inicio</a></li>
+                    <li><a href="#" id="btnNosotros">Nosotros</a></li>
+                    <li><a href="#" id="btnExperiencia">Experiencias</a></li>
+                    <li><a href="#" id="btnPlanes">Planes</a></li>
+                    <li><a href="#" id="btnOfertas">Ofertas</a></li>
+                </ul>
+            </nav>
+        </section>
+        <!-- en esta seccion encontramos el bloque donde se llamara el iframe creado con javaScript -->
+        <section class="paginas" id="paginas">
+
+        </section>
+        <!-- Esta seccion nos contiene la informacion de la pagina que encontramos en el footer-->
+        <footer class="flex-container">
+            <div>
+                <h3>Contactanos</h3>
+                <div class="redes">
+                    <img class="facebook" src="./../Imagenes/facebook.png" height="30" width="30" title="Facebook" />
+                    <img class="instram" src="./../Imagenes/instagram.jfif" height="25" width="25" title="Instagram" />
+                    <img class="tiktok" src="./../Imagenes/tiktok.png" height="30" width="30" title="Tik tok" />
+                </div>
+            </div>
+            <div>
+                <h3>Servicio al cliente</h3>
+                <span>Telefono:</span>
+                <label>986264542</label>
+            </div>
+            <div>
+                <h3>Trabaja con nosotros</h3>
+                <span>Telefono:</span>
+                <label>2041894</label>
+            </div>
+            <div>
+                <h3>Vigilado y supervisado</h3>
+                <label>Superintendecia</label><br>
+                <label>industria y comercio</label><br><br>
+                <label>Superintendecia</label><br>
+                <label>de trasnsporte</label>
+            </div>
+        </footer>
+    </div>
 </body>
+<!-- por ultimo se llama el archivo externo javascript ya que se necesita en esta parte para que me cargue todas las funciones a utilizar  -->
+<script src="./../Main/main.js"></script>
+
 </html>
