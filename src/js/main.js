@@ -3,7 +3,7 @@ const iframe = document.createElement("iframe")
 
 // se utiliza el metodo onload para que cargue la parte inicial de la pagina
 window.addEventListener("load", () => {
-    iframe.src = "././Inicio.html"
+    iframe.src = "./pages/inicio.html"
     iframe.id = "iframeDimanico"
     document.getElementById("paginas").append(iframe)
 
@@ -14,7 +14,7 @@ const iframeInicio = document.getElementById("btnInicio")
 iframeInicio.addEventListener("click", () => {
 
     document.getElementById("iframeDimanico") ? document.getElementById("paginas").removeChild(document.getElementById("iframeDimanico")) : ""
-    iframe.src = "././Inicio.html"
+    iframe.src = "./pages/inicio.html"
     iframe.id = "iframeDimanico"
     document.getElementById("paginas").append(iframe)
 
@@ -24,7 +24,7 @@ iframeInicio.addEventListener("click", () => {
 const iframeNosotros = document.getElementById("btnNosotros")
 iframeNosotros.addEventListener("click", () => {
     document.getElementById("iframeDimanico") ? document.getElementById("paginas").removeChild(document.getElementById("iframeDimanico")) : ""
-    iframe.src = "./Nosotros.html"
+    iframe.src = "./pages/Nosotros.html"
     iframe.id = "iframeDimanico"
     document.getElementById("paginas").append(iframe)
 
@@ -34,7 +34,7 @@ iframeNosotros.addEventListener("click", () => {
 const iframeExperiencia = document.getElementById("btnExperiencia")
 iframeExperiencia.addEventListener("click", () => {
     document.getElementById("iframeDimanico") ? document.getElementById("paginas").removeChild(document.getElementById("iframeDimanico")) : ""
-    iframe.src = "./Experiencias.html"
+    iframe.src = "./pages/Experiencias.html"
     iframe.id = "iframeDimanico"
     document.getElementById("paginas").append(iframe)
 
@@ -44,7 +44,7 @@ iframeExperiencia.addEventListener("click", () => {
 const iframePlanes = document.getElementById("btnPlanes")
 iframePlanes.addEventListener("click", () => {
     document.getElementById("iframeDimanico") ? document.getElementById("paginas").removeChild(document.getElementById("iframeDimanico")) : ""
-    iframe.src = "./Planes.html"
+    iframe.src = "./pages/Planes.html"
     iframe.id = "iframeDimanico"
     document.getElementById("paginas").append(iframe)
 
@@ -56,7 +56,7 @@ iframePlanes.addEventListener("click", () => {
 const iframeOfertas = document.getElementById("btnOfertas")
 iframeOfertas.addEventListener("click", () => {
     document.getElementById("iframeDimanico") ? document.getElementById("paginas").removeChild(document.getElementById("iframeDimanico")) : ""
-    iframe.src = "./Ofertas.html"
+    iframe.src = "./pages/Ofertas.html"
     iframe.id = "iframeDimanico"
     document.getElementById("paginas").append(iframe)
 
