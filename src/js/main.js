@@ -3,7 +3,7 @@ const iframe = document.createElement("iframe")
 
 // se utiliza el metodo onload para que cargue la parte inicial de la pagina
 window.addEventListener("load", () => {
-    iframe.src = "./pages/Nosotros1.html"
+    iframe.src = "./Inicio1.html"
     iframe.id = "iframeDimanico"
     document.getElementById("paginas").append(iframe)
 
@@ -14,7 +14,7 @@ const iframeInicio = document.getElementById("btnInicio")
 iframeInicio.addEventListener("click", () => {
 
     document.getElementById("iframeDimanico") ? document.getElementById("paginas").removeChild(document.getElementById("iframeDimanico")) : ""
-    iframe.src = "./pages/Nosotros1.html"
+    iframe.src = "./Inicio1.html"
     iframe.id = "iframeDimanico"
     document.getElementById("paginas").append(iframe)
 
