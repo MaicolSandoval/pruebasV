@@ -158,3 +158,8 @@ iframe {
     display: flex;
     padding-bottom: 15px;
 }
+
+.contenedorUsu{
+    margin-left: 25%;
+    margin-right: 25%;
+}

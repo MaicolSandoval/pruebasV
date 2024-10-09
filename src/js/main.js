@@ -62,4 +62,13 @@ iframeOfertas.addEventListener("click", () => {
 
 })
 
+const iframeIngresoUsu = document.getElementById("btnIngreso")
+iframeIngresoUsu.addEventListener("click", () => {
+    document.getElementById("iframeDimanico") ? document.getElementById("paginas").removeChild(document.getElementById("iframeDimanico")) : ""
+    iframe.src = "./pages/IngresoUsuario.html"
+    iframe.id = "iframeDimanico"
+    document.getElementById("paginas").append(iframe)
+
+})
+
 
